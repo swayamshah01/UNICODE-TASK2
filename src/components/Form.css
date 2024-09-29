@@ -1,0 +1,291 @@
+/*--------------------------------------------------light mode themes----------------------------------------------*/
+.light-mode {
+    background-color: #fff;
+    color: #162938;
+    border-radius: 50px;
+}
+.newbtn{
+    color: black;
+}
+.error{
+    color: red;
+    width: 200px;
+    padding: 10px;
+}
+.showerror{
+    display: flex;
+    flex-direction: coloumn;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    width: 600px;
+    border-radius: 15px;
+    background:transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    color: white;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 20px ;
+    position: relative;
+}
+
+.text{
+    color:#162938 ;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.underline{
+    width: 61px;
+    height: 6px;
+    background: #162938;
+    border-radius: 9px;
+}
+
+.inputs{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+   
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 450px;
+    height: 25px;
+    background:transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(41, 36, 189, 0.267);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputs input::placeholder{
+    color:  #162938;
+    font-weight: 500;
+}
+
+.input img{
+    margin: 0px 30px;
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background:transparent;
+    border: none;
+    outline: none;
+    color: #162938;
+    font-size: 19px;
+}
+
+.newbtn button{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.forgotpas{
+    padding-left: 50px;
+    margin-top:5px ;
+    color: black;
+    font-size: 18px;
+} 
+
+.click{
+    color: #66b3ff;
+    text-decoration: underline;
+}
+
+.click:hover{
+    color: blue;
+    cursor: pointer;
+   
+}
+
+
+.submit-buttons{
+    display: flex;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: white;
+    background:#162938;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hrefbutton:hover{
+    color: black;
+}
+.hrefbutton{
+    color: #66b3ff;
+    text-decoration: underline;
+}
+
+/* //------------------------------------------------------------------------------------------------------------- */
+
+/* switch */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #303136;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
+
+  .main{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+}
+/*------------------------------------------ end of button-------------------------------------------------------------- */
+
+
+/* Dark mode styles */
+.dark-mode {
+    /* background-color: #333; */
+    background-color: #162938;
+    color: #fff;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10 rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+
+.dark-mode .container {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.dark-mode .text,
+.dark-mode .input input,
+.dark-mode .input input::placeholder,
+.dark-mode .submit  {
+    color: #fff;
+}
+
+
+.dark-mode .underline {
+    background: #fff;
+}
+
+.dark-mode .input {
+    border-color: rgba(255,255,255,0.3);
+}
+
+.dark-mode .submit {
+     background: white; 
+    color: black;
+}
+
+.dark-mode .forgotpass,
+.dark-mode .newbtn.forgotpas {
+    color: white;
+}
+
+
+
+.dark-mode .hrefbutton {
+    color: #66b3ff;
+}
+
+.dark-mode .error{
+    color: white;
+}
+
+.dark-mode .showerror{
+   
+        display: flex;
+        flex-direction: coloumn;
+        justify-content: center;
+        align-items: center;
+
+}
+
